@@ -1,5 +1,5 @@
 <?php
-require 'connection.php';
+require '../config/Database.php';
 $stmt = $pdo->query("SELECT * FROM mahasiswa ORDER BY id DESC");
 $mahasiswa = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
